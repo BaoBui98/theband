@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <form action="#" method="post">
+        <h2>Đăng ký</h2>
+        <div class="row">
+            <div class="col-left">
+                <label for="fullname">Họ và tên:</label>
+            </div>
+            <div class="col-right">
+                <input type="text" id="fullname" name="fullname" autofocus required>
+                <p>Đây là tên hiển thị cùng với thông tin của bạn.Bạn có thể sử dụng bất cứ tên nào mà bạn mong muốn</p>
+                <p>Sau khi tạo bạn sẽ không thể thay đổi được tên này</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="email">Đia chỉ email:</label>
+            </div>
+            <div class="col-right">
+                <input type="email" id="email" name="email" required>
+                <p>Lưu ý điền thông tin cẩn thận.Nếu điền sai,email bạn sẽ không thể đăng kí thông tin(khuyến khích nên
+                    dùng Gmail)</p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-left">
+                <label for="password">Mật khẩu:</label>
+            </div>
+            <div class="col-right">
+                <input type="password" name="password" required id="password">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="pass-confirm">Xác nhận mật khẩu:</label>
+            </div>
+            <div class="col-right">
+                <input type="password" id="pass-confirm" name="pass-confirm" required>
+                <p>Nhập mật khẩu của bạn trong lần đầu tiên và xác nhận lại nó bằng cách nhập lại mật khẩu ở ô bên dưới
+                </p>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-left">
+                <label for="male">Giới tính:</label>
+            </div>
+            <div class="col-right">
+                <input type="radio" value="male" id="male" name="gender">
+                <label for="male">Nam</label>
+                <br>
+                <input type="radio" value="female" id="female" name="gender">
+                <label for="female">Nữ</label>
+                <br>
+                <input type="radio" value="undefinded" id="undefinded" name="gender">
+                <label for="undefinded">Không xác định</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-left">
+                <label for="date_month">Ngày sinh</label>
+            </div>
+            <div class="col-right">
+                <select name="date_month" id="date_month" required>
+                    <option value="" hidden></option>
+                    <option value="1">Tháng 1</option>
+                    <option value="2">Tháng 2</option>
+                    <option value="3">Tháng 3</option>
+                    <option value="4">Tháng 4</option>
+                    <option value="5">Tháng 5</option>
+                    <option value="6">Tháng 6</option>
+                    <option value="7">Tháng 7</option>
+                    <option value="8">Tháng 8</option>
+                    <option value="9">Tháng 9</option>
+                    <option value="10">Tháng 10</option>
+                    <option value="11">Tháng 11</option>
+                    <option value="12">Tháng 12</option>
+                </select>
+                <input type="number" placeholder="Ngày" min="1" max="31" name="date">
+                <input type="number" placeholder="Năm" min="1900" max="2023" name="year">
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-left">
+                <label for="confirm">Xác nhận:</label>
+            </div>
+            <div class="col-right">
+                <div class="g-recaptcha" data-sitekey="6Lek1cgjAAAAAMI6XUMf_mPGEWAvRYCZM0JMd_cO"></div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-left">
+
+            </div>
+            <div class="col-right">
+                <p>
+                    <input type="checkbox" checked>
+                    Tôi đã đọc <span>Nội quy diễn đàn</span>.Tôi hứa sẽ chấp hành nghiêm chỉnh.
+                </p>
+                <button type="submit">Đăng ký</button>
+            </div>
+        </div>
+
+    </form>
+</body>
+
+</html>
